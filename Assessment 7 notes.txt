@@ -1,0 +1,27 @@
+Runtime.js Notes:
+
+tinyArray-
+insert 34.3 us
+append 73.6 us
+
+smallArray-
+insert 50.8 us
+append 95.5 us
+
+mediumArray-
+insert 197.1 us
+append 168 us
+
+largeArray-
+insert 9.0089 ms
+append 680.6 us
+
+extraLargeArray-
+insert 877.9801 ms
+append 3.3581 ms
+
+The append function becomes the faster one as the array gets bigger. The append 
+function has the time complexity of O(n) because it is directly proportional to 
+the size of the input array. This simplifies and optimizes the performance of the 
+function. While the insert function has the time complexity of O(n^2) because of 
+the use of unshift. This makes it slower as the array grows, making it less optimal.   
